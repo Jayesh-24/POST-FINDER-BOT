@@ -13,7 +13,7 @@
     "repository": "https://github.com/Jayesh-24/POST-FINDER-BOT/",
     "success_url": "https://telegram.dog/TroJanzHEX",
     "env": {
-        "TG_BOT_TOKEN": {
+        "BOT_TOKEN": {
             "description": "You Telegram Bot Token from @BotFather",
             "value": ""
         },
@@ -25,11 +25,11 @@
             "description": "Your APP ID from my.telegram.org or @UseTGXBot",
             "value": ""
         },
-        "TG_USER_SESSION": {
+        "SESSION": {
             "description": "A pyrogram user session string. Generate from https://repl.it/@prgofficial/String-Gen",
             "value": ""
         },
-        "AUTH_USERS": {
+        "ADMIN": {
             "description": "ID of users that can use the bot commands",
             "value": ""
         },
@@ -37,24 +37,15 @@
             "description": "Database URL from https://cloud.mongodb.com/",
             "value": ""
         },
-        "DATABASE_NAME": {
-            "description": "Your database name from mongoDB. ( Default will 'Cluster0' )",
-            "value": "Cluster0"
+        "CHANNEL": {
+            "description": "Force subscribe channel username without @",
+            "value": ""
         },
-      
-        "DOC_SEARCH": {
-            "description": "Should bot search for document files in channels ( Give 'yes' or 'no' )",
-            "value": "yes"
+        "LOG_CHANNEL": {
+            "description": "Log Channel ID",
+            "value": ""
         },
-        "VID_SEARCH": {
-            "description": "Should bot search for video files in channels ( Give 'yes' or 'no' )",
-            "value": "no"
-        },
-        "MUSIC_SEARCH": {
-            "description": "Should bot search for music files in channels ( Give 'yes' or 'no' )",
-            "value": "no"
-        }
-    },
+       
     "buildpacks": [
         {
             "url": "heroku/python"

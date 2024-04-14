@@ -45,7 +45,8 @@
             "description": "Log Channel ID",
             "value": ""
         },
-       
+    },  // Added this closing bracket to properly close the "env" object.
+    
     "buildpacks": [
         {
             "url": "heroku/python"
